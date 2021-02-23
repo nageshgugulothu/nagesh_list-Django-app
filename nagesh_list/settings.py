@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from django.contrib.messages import constants as messages
 import os
 import django_heroku
+import dj_database_url
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -28,7 +30,7 @@ SECRET_KEY = 'on2ya4pw1m#0mkg&o_9g^yt_5pq2(n^wxdsnv*pgrv7sxg-b)o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nageshlist.herokuapp.com/', 'localhost']
 
 
 # Application definition
@@ -127,3 +129,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 django_heroku.settings(locals())
+

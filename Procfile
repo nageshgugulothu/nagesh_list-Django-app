@@ -1,1 +1,1 @@
-web: gunicorn nagesh_list.wsgi --log-file
+web: gunicorn nagesh_list.wsgi

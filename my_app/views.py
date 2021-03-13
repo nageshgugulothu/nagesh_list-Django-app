@@ -5,7 +5,7 @@ from requests.compat import quote_plus
 from . import models
 
 
-BASE_CRAIGSLIST_URL = 'https://delhi.craigslist.org/search/?query={}'
+BASE_CRAIGSLIST_URL = 'https://hyderabad.craigslist.org/search/?query={}'
 BASE_IMAGE_URL = 'https://images.craigslist.org/{}_300x300.jpg'
 
 # Create your views here.
